@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ezyfood</string>
+    <string name="coke">Coca Cola\nRp.10000 x</string>
+    <string name="aqua">Aqua\nRp.6000 x</string>
+    <string name="jus_apel">Jus Apel\nRp.12000 x</string>
+    <string name="jus_alpukat">Jus Alpukat\nRp.14000 x</string>
+</resources>

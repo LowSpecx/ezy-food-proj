@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrinksActivity">
+
+    <Button
+        android:id="@+id/my_order2"
+        android:layout_width="93dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:onClick="myOrder"
+        android:text="My Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_order2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/coca_cola"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:adjustViewBounds="true"
+                android:background="#FFFFFF"
+                android:contentDescription="coke"
+                android:onClick="addToCart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/coca_cola"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:text="Coca Cola (Rp. 10000)" />
+
+            <ImageButton
+                android:id="@+id/aqua"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:adjustViewBounds="true"
+                android:background="#FFFFFF"
+                android:contentDescription="aqua"
+                android:onClick="addToCart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/aqua"
+                tools:src="@drawable/aqua"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:text="Aqua (Rp.6000)" />
+
+            <ImageButton
+                android:id="@+id/apple_juice"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:adjustViewBounds="true"
+                android:background="#FFFFFF"
+                android:onClick="addToCart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/apple_juice"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:text="Jus apel (Rp.12000)" />
+
+            <ImageButton
+                android:id="@+id/avocado_juice"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:adjustViewBounds="true"
+                android:background="#FFFFFF"
+                android:onClick="addToCart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/avocado_juice"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:text="Jus alpukat (Rp.14000)" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

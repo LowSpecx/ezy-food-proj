@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"
+    tools:context=".myOrderActivity">
+
+    <TableRow
+        android:id="@+id/my_order4"
+        android:layout_width="0dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_order3">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/avocado_juice" />
+
+        <TextView
+            android:id="@+id/myOrder_qty_avocado"
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/jus_alpukat" />
+
+        <Button
+            android:id="@+id/delete_avocado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:foregroundGravity="center"
+            android:text="Hapus" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/my_order3"
+        android:layout_width="0dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_order2" >
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/apple_juice" />
+
+        <TextView
+            android:id="@+id/myOrder_qty_apple"
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/jus_apel" />
+
+        <Button
+            android:id="@+id/delete_apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:foregroundGravity="center"
+            android:text="Hapus" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/my_order1"
+        android:layout_width="0dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalPrice">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/coca_cola" />
+
+        <TextView
+            android:id="@+id/my_order_qty_coke"
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/coke" />
+
+        <Button
+            android:id="@+id/delete_coke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:foregroundGravity="center"
+            android:text="Hapus" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginRight="170dp"
+        android:background="#AAAAAA"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="payNow"
+        android:text="Pay Now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:id="@+id/my_order2"
+        android:layout_width="0dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_order1">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/aqua" />
+
+        <TextView
+            android:id="@+id/my_order_qty_aqua"
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/aqua" />
+
+        <Button
+            android:id="@+id/delete_aqua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:foregroundGravity="center"
+            android:text="Hapus" />
+
+    </TableRow>
+</androidx.constraintlayout.widget.ConstraintLayout>

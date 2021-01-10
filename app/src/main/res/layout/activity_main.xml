@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/drinks"
+        android:layout_width="120dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:onClick="displayDrinks"
+        android:text="Drinks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history_button" />
+
+    <Button
+        android:id="@+id/snacks"
+        android:layout_width="120dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="Snacks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_order" />
+
+    <Button
+        android:id="@+id/food"
+        android:layout_width="120dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="350dp"
+        android:text="Food"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drinks"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/topup"
+        android:layout_width="120dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="350dp"
+        android:text="TopUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snacks"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/my_order"
+        android:layout_width="93dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:onClick="myOrder"
+        android:text="My Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/history_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text="History"
+        app:layout_constraintEnd_toStartOf="@+id/my_order"
+        tools:layout_editor_absoluteY="84dp"
+        android:onClick="viewHistory"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
